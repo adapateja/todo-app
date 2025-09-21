@@ -31,7 +31,7 @@ function Home({ tasks, addTask, toggleComplete, deleteTask, editTask }) {
         />
       </div>
 
-      {/* Task List */}
+      {/* Task List  */}
       <TaskList
         tasks={filteredTasks}
         toggleComplete={toggleComplete}

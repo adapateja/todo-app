@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f7ff;  /* light mode background */
-  color: #222;           /* light mode text */
+  background: #f0f7ff;  
+  color: #222;          
   transition: all 0.3s;
 }
 
@@ -17,8 +17,8 @@ body.dark {
 /* Navbar base */
 .navbar {
   display: flex;
-  justify-content: space-between; /* we'll adjust layout */
-  align-items: center;            /* vertical centering */
+  justify-content: space-between; 
+  align-items: center;            
   padding: 1rem 2rem;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -34,7 +34,7 @@ body.dark {
 
 /* Dark mode navbar */
 .navbar-dark {
-  background: #e673ecee;   /* dark black background */
+  background: #e673ecee;   
   color: white;
 }
 
@@ -42,14 +42,14 @@ body.dark {
 .nav-links {
   display: flex;
   gap: 2rem;
-  align-items: center;    /* vertical center */
-  justify-content: center; /* horizontal center in navbar */
-  flex-grow: 1;           /* take available space */
+  align-items: center;    
+  justify-content: center; 
+  flex-grow: 1;           
 }
 
 /* Navbar links */
 .nav-links a {
-  color: inherit;         /* white in dark, default in light */
+  color: inherit;         
   text-decoration: none;
   font-weight: 500;
 }

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // We'll create this CSS file
+import "./Navbar.css"; 
 
 function Navbar({ darkMode, toggleTheme }) {
   return (

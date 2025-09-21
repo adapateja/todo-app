@@ -43,17 +43,17 @@ body.dark .task-meta {
 
 /* Priority colors */
 .priority-high {
-  color: #e74c3c; /* Red */
+  color: #e74c3c; 
   font-weight: bold;
 }
 
 .priority-medium {
-  color: #f1c40f; /* Yellow */
+  color: #f1c40f; 
   font-weight: bold;
 }
 
 .priority-low {
-  color: #2ecc71; /* Green */
+  color: #2ecc71; 
   font-weight: bold;
 }
 
