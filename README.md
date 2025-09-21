@@ -1,3 +1,31 @@
+
+How to Run the To-Do App Locally
+Step 1: Open Terminal in Project Directory
+
+Make sure you are inside the todo-app folder in your terminal.
+
+Example path:
+
+C:\Users\YourName\Projects\todo-app>
+
+Step 2: Build the Project (Optional but recommended)
+
+Run the build command to generate optimized files:
+
+C:\Users\YourName\Projects\todo-app> npm run build
+
+
+This step creates a build folder with production-ready files.
+
+Step 3: Start the App
+
+Run the development server:
+
+C:\Users\YourName\Projects\todo-app> npm start
+
+
+Your browser should automatically open http://localhost:3000/ and you can start using the app.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
