@@ -1,0 +1,78 @@
+/* Navbar base */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 0 0 10px 10px;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Light mode */
+.navbar-light {
+  background: linear-gradient(to right, #a259ff, #7b5cff);
+  color: white;
+}
+
+/* Dark mode */
+.navbar-dark {
+  background: #222;
+  color: white;
+}
+
+/* App title */
+.navbar-title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.navbar-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  color: white;
+  background-color: #6a11cb;
+}
+
+.navbar-links a:hover {
+  background-color: #7b5cff;
+}
+
+/* Toggle button */
+.navbar-toggle button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navbar-light .navbar-toggle button {
+  background: white;
+  color: #6a11cb;
+}
+
+.navbar-light .navbar-toggle button:hover {
+  background: #f0e6ff;
+}
+
+.navbar-dark .navbar-toggle button {
+  background: #444;
+  color: #fff;
+}
+
+.navbar-dark .navbar-toggle button:hover {
+  background: #555;
+}

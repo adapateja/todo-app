@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f7ff;  /* light mode background */
+  color: #222;           /* light mode text */
+  transition: all 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* DARK MODE */
+body.dark {
+  background: #1e1e1e;
+  color: #f5f5f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+/* Navbar base */
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between; /* we'll adjust layout */
+  align-items: center;            /* vertical centering */
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 0 0 10px 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light mode navbar */
+.navbar-light {
+  background: linear-gradient(to right, #6a11cb, #b63bff);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Dark mode navbar */
+.navbar-dark {
+  background: #e673ecee;   /* dark black background */
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center in navbar */
+  flex-grow: 1;           /* take available space */
+}
+
+/* Navbar links */
+.nav-links a {
+  color: inherit;         /* white in dark, default in light */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle button */
+.navbar button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.navbar-light button {
+  background: white;
+  color: #6a11cb;
+}
+
+.navbar-dark button {
+  background: #ffffff;
+  color: #eaaf40;
+}
+
+.navbar button:hover {
+  opacity: 0.8;
+}
+
+
+/* Task Input */
+.task-input input, .task-input select {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  transition: all 0.3s;
+}
+
+/* DARK mode for inputs */
+body.dark .task-input input,
+body.dark .task-input select {
+  background: #333;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+/* Task Item */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0.8rem;
+  margin: 0.3rem 0;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+body.dark .task-item {
+  background: #333;
+}
+
+.task-item.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Button */
+button {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
 }

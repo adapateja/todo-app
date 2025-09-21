@@ -1,0 +1,83 @@
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Dark mode support */
+body.dark .task-item {
+  background: #333;
+  color: #f5f5f5;
+}
+
+.task-text {
+  font-size: 1.1rem;
+  margin: 0 0 5px 0;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-meta {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 2px 0;
+}
+
+body.dark .task-meta {
+  color: #ccc;
+}
+
+/* Priority colors */
+.priority-high {
+  color: #e74c3c; /* Red */
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: #f1c40f; /* Yellow */
+  font-weight: bold;
+}
+
+.priority-low {
+  color: #2ecc71; /* Green */
+  font-weight: bold;
+}
+
+/* Action buttons */
+.task-actions button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.task-actions button:hover {
+  background: #ddd;
+}
+
+body.dark .task-actions button:hover {
+  background: #555;
+  color: #fff;
+}
+
+/* Delete button special hover */
+.task-actions button:last-child:hover {
+  background: #e74c3c;
+  color: #fff;
+}
