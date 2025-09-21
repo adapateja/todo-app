@@ -1,0 +1,42 @@
+Features Implemented in To-Do App
+
+1. Task Management
+    Add new tasks with text, priority (Low/Medium/High), and deadline.
+    Edit existing tasks (text, priority, deadline) using a prompt interface.
+    Delete tasks permanently.
+    Mark tasks as completed or undo completion.
+
+2. Task Display
+    Pending Tasks and Completed Tasks displayed on separate pages.
+    Task filtering/search for pending tasks.
+    Tasks display creation timestamp, deadline, and priority.
+    Priority shown in color:
+        High → Red
+        Medium → Yellow
+        Low → Green
+
+3. UI & UX
+    Responsive layout using Flexbox.
+    Beautiful buttons and inputs with hover effects.
+    Dark Mode / Light Mode toggle.
+
+4. Local Storage
+    All tasks are persisted in localStorage.
+Note:
+    As per the clarification in the instructions, although React Native was initially mentioned.
+    But later in clarification email said it is acceptable to use React for this project. 
+    In React Native, persistent storage would typically be implemented using AsyncStorage.
+    Since this project is built with React, I have used localStorage to store tasks.
+    This means that tasks will remain saved even if the browser is refreshed or closed, as long as the user does not clear the browser data.
+    In React Native, the same persistence could be achieved using AsyncStorage, but here we rely on localStorage for web.
+
+5. Routing
+    React Router used to navigate between:
+        Home or Pending Tasks (/)
+        Completed Tasks (/completed)
+
+6. Technologies Used
+    React.js for frontend.
+    React Router for navigation.
+    CSS for styling
+    localStorage for saving tasks.
