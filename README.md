@@ -11,9 +11,9 @@ Step 2: Install the required dependencies and node modules by running "npm insta
 
 Step 3: Build the Project (Optional but recommended)    
         Run the build command to generate optimized files.
+        This step creates a build folder with production-ready files.
         Example:
                 C:\Users\YourName\Projects\todo-app> npm run build
-        This step creates a build folder with production-ready files.
 
 Step 4: Start the App
         Run the development server.
